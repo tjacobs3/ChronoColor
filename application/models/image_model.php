@@ -4,13 +4,46 @@ class Image_model extends CI_Model {
 
     var $file_path   = '';
     var $image;
-    var $color_histogram;
     var $histogram_partitions = 12;
+    var $color_histogram;
 
     function __construct()
     {
         // Call the Model constructor
         parent::__construct();
+    }
+    
+    function process_all_entries()
+    {
+
+            $query = $this->db->get_where('images',  array('average_red' => null));
+            foreach ($query->result() as $row)
+            {
+                $this->init($row->file_location);
+                $this->create_hsb_histogram();
+                $avg_color = $this->get_average_color();
+
+                $avg_color_red = $avg_color[0];
+                $avg_color_green = $avg_color[1];
+                $avg_color_blue = $avg_color[2];
+                
+                $top_colors = $this->analyze_color_histogram();
+                $data = array(
+                    'average_red' => $avg_color[0],
+                    'average_blue' => $avg_color[1],
+                    'average_green' => $avg_color[2],
+                    'color_1' => $top_colors[0][0],
+                    'color_2' => $top_colors[1][0],
+                    'color_3' => $top_colors[2][0],
+                    'color_4' => $top_colors[3][0],
+                    'color_5' => $top_colors[4][0]
+                );
+
+                $this->db->where('id', $row->id);
+                $this->db->update('images', $data);
+                
+                imagedestroy($this->image);
+            }
     }
     
     function init($file_path)
@@ -66,6 +99,7 @@ class Image_model extends CI_Model {
         usort($top_colors, array($this, 'sort_analyzed_colors'));
         $top_colors = array_reverse($top_colors);
         $count = 0;
+        $ret_array = array();
         foreach ($top_colors as $key => $value) {
             if($value[1] <= 1) continue;
             $ret_array[$count] = $value;

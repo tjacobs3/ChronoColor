@@ -32,6 +32,22 @@ class Image extends CI_Controller {
 			$this->load->view('image_uploaded', $data);
 		}
 	}
+    
+    public function process_all()
+    {
+        $config['upload_path'] = 'uploads/';
+		$config['allowed_types'] = 'jpg|png';
+		$config['max_size']	= '1000';
+		$config['max_width']  = '2000';
+		$config['max_height']  = '2000';
+    
+        $this->load->helper('form'); 
+		$this->load->library('upload', $config);
+        
+        $this->load->model('Image_model', '', TRUE);
+        $this->Image_model->process_all_entries();
+        $this->load->view('welcome_message', "DONE");
+    }
 }
 
 /* End of file welcome.php */
