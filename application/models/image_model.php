@@ -12,7 +12,23 @@ class Image_model extends CI_Model {
         // Call the Model constructor
         parent::__construct();
     }
+
+    /**
+    *   Query Functions
+    **/
+    function get_average_color_by_year($artist_id)
+    {
+        $this->db->select('YEAR( year ) AS year, AVG( average_red ) AS r, AVG( average_blue ) AS b, AVG( average_green ) AS g');
+        $this->db->from('images');
+        $this->db->where('artist_id', $artist_id);
+        $this->db->group_by("YEAR( year )");
+        return $this->db->get()->result();
+    }
     
+    
+    /**
+    *   Image Processing Functions
+    **/
     function process_all_entries()
     {
 
