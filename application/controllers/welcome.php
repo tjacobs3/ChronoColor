@@ -20,7 +20,7 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
         $this->load->model('Image_model', '', TRUE);
-        $data = array('artist_data' => $this->Image_model->get_average_color_by_year(1));
+        $data = array('artist_data' => $this->Image_model->get_average_color_by_year_and_quarter(1));
 		$this->load->view('welcome_message', $data);
 	}
 }

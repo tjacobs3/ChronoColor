@@ -7,7 +7,7 @@ foreach ($artist_data as $row)
     $r = round($row->r);
     $g = round($row->g);
     $b = round($row->b);
-    echo "<div style='background-color: rgb({$r}, {$g}, {$b}); width:20px; height: 30px; float: left;' ></div>";
+    echo "<div style='background-color: rgb({$r}, {$g}, {$b}); width:6px; height: 60px; float: left;' ><!-- {$row->year} {$row->quarter} --></div>";
 }
 ?>
 <div class="contentblock">

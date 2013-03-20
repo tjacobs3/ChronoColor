@@ -16,12 +16,13 @@ class Image_model extends CI_Model {
     /**
     *   Query Functions
     **/
-    function get_average_color_by_year($artist_id)
+    function get_average_color_by_year_and_quarter($artist_id)
     {
-        $this->db->select('YEAR( year ) AS year, AVG( average_red ) AS r, AVG( average_blue ) AS b, AVG( average_green ) AS g');
+        $this->db->select('year, quarter, AVG( average_red ) AS r, AVG( average_green ) AS g, AVG( average_blue ) AS b');
         $this->db->from('images');
         $this->db->where('artist_id', $artist_id);
-        $this->db->group_by("YEAR( year )");
+        $this->db->group_by("year, quarter");
+        $this->db->order_by("year ASC, quarter ASC");
         return $this->db->get()->result();
     }
     
