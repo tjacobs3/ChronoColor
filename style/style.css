@@ -25,12 +25,10 @@
 	background: -ms-linear-gradient(-45deg, rgba(240,249,255,1) 19%,rgba(203,235,255,1) 69%,rgba(161,219,255,1) 100%); /* IE10+ */
 	background: linear-gradient(135deg, rgba(240,249,255,1) 19%,rgba(203,235,255,1) 69%,rgba(161,219,255,1) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#a1dbff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-	
-	
 }
 
 .contentblock {
-	margin:0 0 0 100px;
+	margin:0 100px 0 100px;
 	padding:30px 0;
 }
 
@@ -97,6 +95,9 @@ p.date, p.workdate, p.workdescription {
 	margin-top:20px;
 }
 
+.periods {
+}
+
 .vdivider {
 	background-color:#CCCCCC;
 	height:50px;
@@ -110,10 +111,11 @@ p.date, p.workdate, p.workdescription {
 }
 
 .colorbar {
-	height:100px;
+	height:60px;
 	width:100%;
-	background-color:#CCCCCC;
-	overflow:scroll;
+	overflow-x:auto;
+	overflow-y:hidden;
+	white-space:nowrap;
 }
 
 .detailblock {

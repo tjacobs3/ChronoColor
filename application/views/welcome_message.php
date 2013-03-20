@@ -1,15 +1,4 @@
 <?php $this->load->view('common/header') ?>
-<?php
-// THIS IS A SAMPLE
-// TODO: Load artist data into js
-foreach ($artist_data as $row)
-{
-    $r = round($row->r);
-    $g = round($row->g);
-    $b = round($row->b);
-    echo "<div style='background-color: rgb({$r}, {$g}, {$b}); width:6px; height: 60px; float: left;' ><!-- {$row->year} {$row->quarter} --></div>";
-}
-?>
 <div class="contentblock">
 
     <div>
@@ -19,7 +8,7 @@ foreach ($artist_data as $row)
     <div class="divider_small"></div>
     
     <div class="timeline">
-        <div class="period">
+        <div class="periods">
             <div class="vdivider"></div>
             <div class="timeperiod">
                 <h3>Early Years</h3>
@@ -28,6 +17,17 @@ foreach ($artist_data as $row)
             <span class="clear"></span>
         </div>
         <div class="colorbar">
+			<?php
+            // THIS IS A SAMPLE
+            // TODO: Load artist data into js
+            foreach ($artist_data as $row)
+            {
+                $r = round($row->r);
+                $g = round($row->g);
+                $b = round($row->b);
+                echo "<div style='background-color: rgb({$r}, {$g}, {$b}); width:4px; height: 60px; display: inline-block;' ><!-- {$row->year} {$row->quarter} --></div>";
+            }
+            ?>
         </div>
     </div>
     
