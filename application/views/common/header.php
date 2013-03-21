@@ -12,7 +12,7 @@ var woffEnabled = true;
 // to place your webfonts in a custom directory, uncomment this and set it to where your webfonts are.
 var customPath = "/fonts";
 </script>
-<script type="text/javascript" src="./fonts/Webfonts.js"></script>
+<script type="text/javascript" src="/fonts/Webfonts.js"></script>
 
 <!-- Add jQuery library -->
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
@@ -32,6 +32,8 @@ var customPath = "/fonts";
 <link rel="stylesheet" href="js/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
 <script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
 <!-- End Fancybox js-->
+
+<script type="text/javascript" src="js/javascript.js"></script>
 
 <link rel="stylesheet" type="text/css" href="style/style.css">
 

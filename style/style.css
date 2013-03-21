@@ -121,7 +121,19 @@ p.date, p.workdate, p.workdescription {
 .detailblock {
 	text-align:center;
 	width:100%;
+	margin-top:30px;
 }
+
+.thumbnail {
+	margin:10px;
+	width:auto;
+	height:auto;
+	max-height:80px;
+	box-shadow: 5px 5px 10px #888888;
+	border:2px solid white;
+}
+
+
 
 .detailcontainer {
 	overflow:hidden;

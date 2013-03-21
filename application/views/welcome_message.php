@@ -30,7 +30,13 @@
             ?>
         </div>
     </div>
-    
+    <div class="detailblock">
+    	<a class="fancybox" rel="group" href="picasso/yopp00-033.jpg"><img class="thumbnail" src="picasso/yopp00-033.jpg" alt="" /></a>
+        <a class="fancybox" rel="group" href="picasso/yopp00-120.jpg"><img class="thumbnail" src="picasso/yopp00-120.jpg" alt="" /></a>
+        <a class="fancybox" rel="group" href="picasso/yopp01-197.jpg"><img class="thumbnail" src="picasso/yopp01-197.jpg" alt="" /></a>
+        <a class="fancybox" rel="group" href="picasso/yopp02-023.jpg"><img class="thumbnail" src="picasso/yopp02-023.jpg" alt="" /></a>
+    </div>
+    <!-- Old ID box below
     <div class="detailblock">
         <div class="detailcontainer">
             <div class="arrow">
@@ -69,6 +75,7 @@
         </div>
 
     </div>
+    -->
     <span class="clear"></span>
 </div>
 <?php $this->load->view('common/footer') ?>
