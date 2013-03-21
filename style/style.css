@@ -10,6 +10,10 @@
 	clear:both;
 }
 
+.hidden {
+	display:none;
+}
+
 .container {
 	width:100%;
 }
@@ -79,9 +83,15 @@ p.blocktext {
 	width:700px;
 }
 
-p.date, p.workdate, p.workdescription {
+p.date {
 	font-family: "Museo-500", "Helvetica", "Arial";
 	font-size:14px;
+}
+
+p.caption {
+	font-family: "Museo-500", "Helvetica", "Arial";
+	font-size:14px;
+	color:#FFF;
 }
 
 .divider_small {
@@ -171,6 +181,7 @@ p.date, p.workdate, p.workdescription {
 	width:350px;
 	float:left;
 	margin-left:10px;
+	height:auto;
 }
 
 .workcolor {
