@@ -189,3 +189,9 @@ p.caption {
 	height:75px;
 	background-color:#0FF;
 }
+
+.timelineBlock {
+    width:4px;
+    height: 60px;
+    display: inline-block;
+}

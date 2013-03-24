@@ -33,6 +33,7 @@ var customPath = "/fonts";
 <script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
 <!-- End Fancybox js-->
 
+<script type="text/javascript" src="js/timeline.js"></script>
 <script type="text/javascript" src="js/javascript.js"></script>
 
 <link rel="stylesheet" type="text/css" href="style/style.css">

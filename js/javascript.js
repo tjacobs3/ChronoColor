@@ -1,7 +1,12 @@
 $(document).ready(function() {
+    // Init Timeline, artist-id = 1
+    timeline.init(1);
+
+    // Init FancyBox
 	$(".fancybox").fancybox({
-		afterLoad   : function() {
-			this.title = '<h3>Portrait de Sebastià Junyent</h3><p class="caption">1904</p><p class="caption">Oil on canvas, 73 x 60 cm</p>'
+		beforeShow   : function() {
+            imageData = timeline.getDataForImage($(this.element).data("image_id"));
+			this.title = '<h3>' + imageData.name + '</h3><p class="caption">' + imageData.year + '</p><p class="caption">' + imageData.medium + ', ' + imageData.dimension + '</p>'
 		},
     	helpers:  {
         	thumbs : {

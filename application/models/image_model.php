@@ -26,7 +26,20 @@ class Image_model extends CI_Model {
         return $this->db->get()->result();
     }
     
-    
+    function get_image_info_for_artist_year_and_quarter($artist_id, $year, $quarter)
+    {
+        $this->db->from('images');
+        $this->db->where(array('artist_id' => $artist_id, 'year' => $year, 'quarter' => $quarter));
+        return json_encode($this->db->get()->result());
+    }
+
+    function get_image_info_for_id($id)
+    {
+        $this->db->from('images');
+        $this->db->where('id', $id);
+        return $this->db->get()->row();
+    }
+
     /**
     *   Image Processing Functions
     **/

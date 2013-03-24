@@ -1,6 +1,18 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Image extends CI_Controller {
+    public function images($artist_id, $year, $quarter)
+    {
+        $this->load->model('Image_model', '', TRUE);
+        echo $this->Image_model->get_image_info_for_artist_year_and_quarter($artist_id, $year, $quarter);
+    }
+
+    public function image_view($id)
+    {
+        $this->load->model('Image_model', '', TRUE);
+        $data = array("image_data" => $this->Image_model->get_image_info_for_id($id));
+        $this->load->view('image_view', $data);
+    }
 
 	public function analyze()
 	{

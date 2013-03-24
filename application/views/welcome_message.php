@@ -25,93 +25,14 @@
                 $r = round($row->r);
                 $g = round($row->g);
                 $b = round($row->b);
-                echo "<div style='background-color: rgb({$r}, {$g}, {$b}); width:4px; height: 60px; display: inline-block;' ><!-- {$row->year} {$row->quarter} --></div>";
+                echo "<div class='timelineBlock' style='background-color: rgb({$r}, {$g}, {$b});' data-year='{$row->year}' data-quarter='{$row->quarter}' ><!-- {$row->year} {$row->quarter} --></div>";
             }
             ?>
         </div>
     </div>
     <div class="detailblock">
-    	<a class="fancybox" rel="group" href="#fancycontent"><img class="thumbnail" src="picasso/yopp00-033.jpg" alt="" /></a>
-        <div class="hidden" id="fancycontent">
-        	<div class="workimg"><img src="picasso/yopp00-033.jpg" alt="" /></div>
-            <div class="workcolors">
-                <div class="workcolor" id="workcolor1"></div>
-                <div class="workcolor" id="workcolor2"></div>
-                <div class="workcolor" id="workcolor3"></div>
-                <div class="workcolor" id="workcolor4"></div>
-            </div>
-        </div>
-        <a class="fancybox" rel="group" href="#fancycontent2"><img class="thumbnail" src="picasso/yopp00-120.jpg" alt="" /></a>
-        <div class="hidden" id="fancycontent2">
-        	<div class="workimg"><img src="picasso/yopp00-120.jpg" alt="" /></div>
-            <div class="workcolors">
-                <div class="workcolor" id="workcolor1"></div>
-                <div class="workcolor" id="workcolor2"></div>
-                <div class="workcolor" id="workcolor3"></div>
-                <div class="workcolor" id="workcolor4"></div>
-            </div>
-        </div>
-        <a class="fancybox" rel="group" href="#fancycontent3"><img class="thumbnail" src="picasso/yopp01-197.jpg" alt="" /></a>
-        <div class="hidden" id="fancycontent3">
-        	<div class="workimg"><img src="picasso/yopp01-197.jpg" alt="" /></div>
-            <div class="workcolors">
-                <div class="workcolor" id="workcolor1"></div>
-                <div class="workcolor" id="workcolor2"></div>
-                <div class="workcolor" id="workcolor3"></div>
-                <div class="workcolor" id="workcolor4"></div>
-            </div>
-        </div>
-        <a class="fancybox" rel="group" href="#fancycontent4"><img class="thumbnail" src="picasso/yopp02-023.jpg" alt="" /></a>
-        <div class="hidden" id="fancycontent4">
-        	<div class="workimg"><img src="picasso/yopp02-023.jpg" alt="" /></div>
-            <div class="workcolors">
-                <div class="workcolor" id="workcolor1"></div>
-                <div class="workcolor" id="workcolor2"></div>
-                <div class="workcolor" id="workcolor3"></div>
-                <div class="workcolor" id="workcolor4"></div>
-            </div>
-        </div>
-    </div>
-    <!-- Old ID box below
-    <div class="detailblock">
-        <div class="detailcontainer">
-            <div class="arrow">
-                <img src="img/arrowl.png" width="52" height="44" alt="" />
-            </div>
-        
-            <div class="detail">
-        
-                <div class="detailbox">
-            
-                    <div class="workimg">
-                        <img src="img/workimg.jpg" width="248" height="300" alt="" />
-                    </div>
-                
-                    <div class="workcolors">
-                        <div class="workcolor" id="workcolor1"></div>
-                        <div class="workcolor" id="workcolor2"></div>
-                        <div class="workcolor" id="workcolor3"></div>
-                        <div class="workcolor" id="workcolor4"></div>
-                    </div>
-                
-                </div>
-            
-            <div class="detailtext">
-                <h3 class="worktitle">Portrait de Sebastià Junyent</h3>
-                <p class="workdate">1904</p>
-                <p class="workdescription">Oil on canvas, 73 x 60 cm</p>
-            </div>
-            
-        </div>
-        
-        <div class="arrow">
-        <img src="img/arrowr.png" width="52" height="44" alt="" />
-        </div>
-        
-        </div>
 
     </div>
-    -->
     <span class="clear"></span>
 </div>
 <?php $this->load->view('common/footer') ?>
