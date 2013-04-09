@@ -4,8 +4,7 @@
     <div class="divider"></div>
      
     <div class="header">
-    	<div class="contentblock">Footer
-        </div>
+    	<p>Footer</p>
     </div>
     
 </div>

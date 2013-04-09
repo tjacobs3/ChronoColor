@@ -43,6 +43,7 @@ var customPath = "/fonts";
 <body>
 
 <div id="wrap">
+  <div id="main">
 
 	<div class="header">
     	<div class="contentblock">

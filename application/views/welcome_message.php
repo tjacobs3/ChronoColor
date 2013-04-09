@@ -1,5 +1,5 @@
 <?php $this->load->view('common/header') ?>
-	<div id="main">
+
         <div class="contentblock">
         
             <div>
@@ -49,5 +49,5 @@
         </div>
     </div>
 
-</div>
+  </div>
 <?php $this->load->view('common/footer') ?>
