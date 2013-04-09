@@ -56,7 +56,7 @@ div#footer {
 
 /*End stickyfooter */
 
-.header {	
+#header, #footer {	
 	background: rgb(240,249,255); /* Old browsers */
 	background: -moz-linear-gradient(-45deg, rgba(240,249,255,1) 19%, rgba(203,235,255,1) 69%, rgba(161,219,255,1) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, right bottom, color-stop(19%,rgba(240,249,255,1)), color-stop(69%,rgba(203,235,255,1)), color-stop(100%,rgba(161,219,255,1))); /* Chrome,Safari4+ */
