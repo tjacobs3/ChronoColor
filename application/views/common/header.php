@@ -42,15 +42,15 @@ var customPath = "/fonts";
 
 <body>
 
-<div id="container">
+<div id="wrap">
 
 	<div class="header">
     	<div class="contentblock">
     		<h1>Chrono<span id="color">Color</span></h1>
         	<p class="blocktext">ChronoColor is a joint project between Kevin Folk and Thomas Jacobs. The intent is to display the breadth of an artist's work in an interactive graphical format. A comprehensive selection of the artists' work is displayed so that conclusions may be drawn about their process, tendencies, and development on a macro level. Enjoy.</p>
         </div>
+        <div class="divider"></div>
     </div>
     
-    <div class="divider"></div>
     
     <!-- Start main body here -->
