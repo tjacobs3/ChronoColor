@@ -160,9 +160,10 @@ p.caption {
 }
 
 .colorbar {
-	height:60px;
+	height:80px;
 	width:100%;
 	clear:both;
+    position: relative;
 }
 
 .detailblock {
@@ -200,4 +201,6 @@ p.caption {
     width:4px;
     height: 60px;
     display: inline-block;
+    position: absolute;
+    bottom: 0px;
 }

@@ -25,12 +25,14 @@
                     <?php
                     // THIS IS A SAMPLE
                     // TODO: Load artist data into js
+                    $count = 0;
                     foreach ($artist_data as $row)
                     {
                         $r = round($row->r);
                         $g = round($row->g);
                         $b = round($row->b);
-                        echo "<div class='timelineBlock' style='background-color: rgb({$r}, {$g}, {$b});' data-year='{$row->year}' data-quarter='{$row->quarter}' ><!-- {$row->year} {$row->quarter} --></div>";
+                        echo "<div class='timelineBlock' style='left: " . $count * 4 . "px; background-color: rgb({$r}, {$g}, {$b});' data-year='{$row->year}' data-quarter='{$row->quarter}' ><!-- {$row->year} {$row->quarter} --></div>";
+                        $count += 1;
                     }
                     ?>
                 </div>
