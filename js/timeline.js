@@ -15,6 +15,7 @@ var timeline = {
         // Set up the clicks
         var that = this;
         $(".timelineBlock").click(function(){
+            that.setGalleryTitle($(this).data("year") + " - Quarter " + $(this).data("quarter"));
             $.ajax({
                 type: "GET",
                 dataType: "json",
@@ -47,5 +48,10 @@ var timeline = {
         
         $displayBlock.empty();
         $displayBlock.append(elementsToAttach);
+    },
+    
+    setGalleryTitle: function(title, subtitle) {
+        $(".selectiontext h3").text(title);
+        $(".selectiontext p").text(subtitle);
     }
 }

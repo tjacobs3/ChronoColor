@@ -37,7 +37,10 @@ class Image_model extends CI_Model {
     {
         $this->db->from('images');
         $this->db->where('id', $id);
-        return $this->db->get()->row();
+        $ret_array = $this->db->get()->row_array();
+        $size_array = getimagesize($ret_array["file_location"]);
+        $ret_array["width"] = $size_array[0];
+        return $ret_array;
     }
 
     /**
