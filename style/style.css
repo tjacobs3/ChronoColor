@@ -139,6 +139,8 @@ p.caption {
 }
 
 .periods {
+    position: relative;
+    height: 50px;
 }
 
 .vdivider {
@@ -149,8 +151,7 @@ p.caption {
 }
 
 .timeperiod {
-	float:left;
-	margin-left:10px;
+    position: absolute;
 }
 
 .selectiontext {

@@ -10,15 +10,35 @@
             
             <div class="timeline">
                 <div class="periods">
-                    <div class="vdivider"></div>
-                    <div class="timeperiod">
+                    <div class="timeperiod" style="left:0px;">
+                        <div class="vdivider"></div>
                         <h3>Early Years</h3>
                         <p class="date">1889&ndash;1900</p>
                     </div>
-                    <div class="vdivider"></div>
-                    <div class="timeperiod">
-                        <h3>Early Years</h3>
-                        <p class="date">1889&ndash;1900</p>
+                    <div class="timeperiod" style="left:117px;">
+                        <div class="vdivider"></div>
+                        <h3>Blue</br>Period</h3>
+                        <p class="date">1901&ndash;04</p>
+                    </div>
+                    <div class="timeperiod" style="left:180px;">
+                        <div class="vdivider"></div>
+                        <h3>Rose</br>Period</h3>
+                        <p class="date">1904&ndash;06</p>
+                    </div>
+                    <div class="timeperiod" style="left:250px;">
+                        <div class="vdivider"></div>
+                        <h3>Cubism</h3>
+                        <p class="date">1909&ndash;1912</p>
+                    </div>
+                    <div class="timeperiod" style="left:600px;">
+                        <div class="vdivider"></div>
+                        <h3>Classicism and Surrealism</h3>
+                        <p class="date">1920&ndash;1940</p>
+                    </div>
+                    <div class="timeperiod" style="left:800px;">
+                        <div class="vdivider"></div>
+                        <h3>Neo-expressionism</h3>
+                        <p class="date">1970</p>
                     </div>
                 </div><span class="clear"></span>
                 <div class="colorbar">
@@ -40,7 +60,6 @@
             
             <div class="selectiontext">
                 <h3>1918 - Quarter 1</h3>
-                <p class="date">Blue Period</p>
             </div>
             
             <div class="detailblock">
